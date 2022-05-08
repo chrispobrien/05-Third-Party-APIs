@@ -42,7 +42,7 @@ var loadScheduleEl = function() {
     for (i=0;i<9;i++) {
         // time to display is just the hour and AM/PM
         let time = moment().hour(i+9).format("hA");
-        let hour = $("<div>").addClass("col-2 bg-white p-4 hour").text(time);
+        let hour = $("<div>").addClass("col-2 bg-white p-3 hour").text(time);
         let p = $("<p>").text(schedule[i]);
         let text = $("<div>").addClass("col-8 p-2 past").append(p);
         let icon = $("<img>").addClass("btnInvert").attr("src","./assets/images/floppy-31.svg").attr("alt","Save").attr("width","20px");
